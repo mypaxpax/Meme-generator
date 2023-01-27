@@ -1,3 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
 #root {
+  display: flex;
+  justify-content: center;
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  padding: 20px;
+  height: 45px;
+  width: 550px;
+  gap: 10px;
+}
+
+.header--img {
+  width: 32px;
+}
+
+.header--title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 21px;
+  margin-right: auto;
 }
