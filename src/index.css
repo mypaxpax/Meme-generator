@@ -1,9 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  padding: 35px;
+}
+
 #root {
   display: flex;
   justify-content: center;
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.container {
+  width: 550px;
 }
 
 .header {
@@ -11,13 +27,12 @@
   align-items: center;
   background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
   padding: 20px;
-  height: 45px;
-  width: 550px;
-  gap: 10px;
+  height: 65px;
 }
 
 .header--img {
-  width: 32px;
+  height: 100%;
+  margin-right: 6px;
 }
 
 .header--title {
@@ -25,4 +40,30 @@
   font-weight: 700;
   font-size: 21px;
   margin-right: auto;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 15px;
+}
+
+.form--input {
+  color: #d5d4d8;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+}
+
+.form--button {
+  height: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  border-radius: 5px;
+  grid-column: span 2;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 }
