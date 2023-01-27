@@ -64,3 +64,7 @@ main {
   grid-column: span 2;
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 }
+
+.meme--image {
+  max-width: 100%;
+}
