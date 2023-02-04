@@ -36,6 +36,7 @@ function Meme() {
           value={meme.topText}
           onChange={eventHandle}
         ></input>
+
         <input
           type="text"
           className="form--input"
@@ -44,10 +45,12 @@ function Meme() {
           value={meme.bottomText}
           onChange={eventHandle}
         ></input>
+
         <button onClick={getMemeImage} className="form--button">
           Get a new meme image
         </button>
       </div>
+
       <div className="meme">
         <img src={meme.randomImage} className="meme--image"></img>
         <h2 className="meme--text top">{meme.topText}</h2>
